@@ -25,7 +25,7 @@ Order robots from RobotSpareBin Industries Inc
 
 *** Keywords ***
 Open website to order
-    Open Available Browser    https://robotsparebinindustries.com/#/robot-order
+    Open Available Browser   https://robotsparebinindustries.com/#/robot-order
     Maximize Browser Window
 Download file
     Download      https://robotsparebinindustries.com/orders.csv
@@ -70,7 +70,7 @@ Embed screenshot in pdf
     [Arguments]    ${screenshot}    ${pdf_file}
     Open Pdf    ${pdf_file}
     Add Watermark Image To Pdf    ${screenshot}    ${pdf_file}
-    Add Files To Pdf    ${screenshot}    ${pdf_file}
+    Add Files To Pdf       ${screenshot}    ${pdf_file}
     Close Pdf
 Zip the pdfs
     ${zip_file_name}=    Set Variable    ${OUTPUT_DIR}/receipts.zip
