@@ -12,7 +12,6 @@ Library             RPA.Desktop
 Library             RPA.PDF
 Library             RPA.Smartsheet
 Library             RPA.Archive
-Library             RPA.Browser.Selenium
 
 
 *** Test Cases ***
@@ -77,4 +76,5 @@ Zip the pdfs
     ${zip_file_name}=    Set Variable    ${OUTPUT_DIR}/receipts.zip
     ${pdfs_path}=    Set Variable    output
     Archive Folder With Zip    ${pdfs_path}    ${zip_file_name}    *.pdf
+    
 
