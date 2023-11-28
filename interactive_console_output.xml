@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20231121 14:39:38.007" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20231128 13:21:57.322" rpa="false" schemaversion="4">
 <suite id="s1" name="Robot Interactive Console" source="c:\Users\apeks\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
 <test id="s1-t1" name="Default Task/Test" line="5">
 <kw name="Interpreter Main Loop" library="MainLoop">
-<kw name="Open website to order">
-<msg timestamp="20231121 14:39:38.492" level="FAIL">No keyword with name 'Open website to order' found.</msg>
-<status status="FAIL" starttime="20231121 14:39:38.492" endtime="20231121 14:39:38.492"/>
+<status status="PASS" starttime="20231128 13:21:57.482" endtime="20231128 13:22:03.297"/>
 </kw>
-<status status="PASS" starttime="20231121 14:39:38.070" endtime="20231121 14:39:41.294"/>
-</kw>
-<status status="PASS" starttime="20231121 14:39:38.070" endtime="20231121 14:39:41.294"/>
+<status status="PASS" starttime="20231128 13:21:57.482" endtime="20231128 13:22:03.297"/>
 </test>
-<status status="PASS" starttime="20231121 14:39:38.007" endtime="20231121 14:39:41.296"/>
+<status status="PASS" starttime="20231128 13:21:57.325" endtime="20231128 13:22:03.297"/>
 </suite>
 <statistics>
 <total>
