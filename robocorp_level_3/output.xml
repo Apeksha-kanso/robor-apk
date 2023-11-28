@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20231128 17:42:33.654" rpa="false" schemaversion="4">
+<suite id="s1" name="Producer" source="C:\Users\apeks\OneDrive\Desktop\my-first-robot\robocorp_level_3\producer.robot">
+<test id="s1-t1" name="Produce traffic data work items" line="19">
+<kw name="Download traffic data">
+<kw name="Download">
+<arg>https://github.com/robocorp/inhuman-insurance-inc/raw/main/RS_198.json</arg>
+<arg>${TRAFFIC_JSON_FILE_PATH}</arg>
+<arg>overwrite=True</arg>
+<msg timestamp="20231128 17:42:33.718" level="FAIL">No keyword with name 'Download' found.</msg>
+<status status="FAIL" starttime="20231128 17:42:33.712" endtime="20231128 17:42:33.718"/>
+</kw>
+<status status="FAIL" starttime="20231128 17:42:33.712" endtime="20231128 17:42:33.719"/>
+</kw>
+<kw name="Load traffic data as table">
+<var>${traffic_data}</var>
+<status status="NOT RUN" starttime="20231128 17:42:33.720" endtime="20231128 17:42:33.720"/>
+</kw>
+<kw name="Filter and sort traffic data">
+<var>${filtered_data}</var>
+<arg>${traffic_data}</arg>
+<status status="NOT RUN" starttime="20231128 17:42:33.720" endtime="20231128 17:42:33.720"/>
+</kw>
+<kw name="Get latest data by country">
+<var>${filtered_data}</var>
+<arg>${filtered_data}</arg>
+<status status="NOT RUN" starttime="20231128 17:42:33.720" endtime="20231128 17:42:33.720"/>
+</kw>
+<kw name="Create work item payloads">
+<var>${payloads}</var>
+<arg>${filtered_data}</arg>
+<status status="NOT RUN" starttime="20231128 17:42:33.722" endtime="20231128 17:42:33.722"/>
+</kw>
+<kw name="Save work item payloads">
+<arg>${payloads}</arg>
+<status status="NOT RUN" starttime="20231128 17:42:33.722" endtime="20231128 17:42:33.722"/>
+</kw>
+<status status="FAIL" starttime="20231128 17:42:33.712" endtime="20231128 17:42:33.722">No keyword with name 'Download' found.</status>
+</test>
+<doc>Inhuman Insurance, Inc. Artificial Intelligence System robot.
+Produces traffic data work items.</doc>
+<status status="FAIL" starttime="20231128 17:42:33.654" endtime="20231128 17:42:33.728"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Producer">Producer</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231128 17:42:33.686" level="ERROR">Error in file 'C:\Users\apeks\OneDrive\Desktop\my-first-robot\robocorp_level_3\producer.robot' on line 4: Importing library 'RPA.HTTP' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+<msg timestamp="20231128 17:42:33.692" level="ERROR">Error in file 'C:\Users\apeks\OneDrive\Desktop\my-first-robot\robocorp_level_3\producer.robot' on line 5: Importing library 'RPA.JSON' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+<msg timestamp="20231128 17:42:33.692" level="ERROR">Error in file 'C:\Users\apeks\OneDrive\Desktop\my-first-robot\robocorp_level_3\producer.robot' on line 6: Importing library 'RPA.Tables' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+<msg timestamp="20231128 17:42:33.710" level="ERROR">Error in file 'C:\Users\apeks\OneDrive\Desktop\my-first-robot\robocorp_level_3\producer.robot' on line 8: Importing library 'RPA.Robocorp.WorkItems' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311
+  C:\Users\apeks\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>

@@ -1,12 +1,12 @@
 *** Settings ***
 Documentation       Inhuman Insurance, Inc. Artificial Intelligence System robot.
 ...                 Produces traffic data work items.
-Library             RPA.HTTP
-Library             RPA.JSON
+# Library             RPA.HTTP
+# Library             RPA.JSON
 Library             RPA.Tables
 Library             Collections
-Library             RPA.Robocorp.WorkItems
-
+# Library             RPA.Robocorp.WorkItems
+Resource            shared.robot
 *** Variables ***
 ${TRAFFIC_JSON_FILE_PATH}=      ${OUTPUT_DIR}${/}traffic.json
 ${COUNTRY_KEY}=                 SpatialDim

@@ -3,6 +3,11 @@
 
 tasks:
   # Task names here are used when executing the bots, renaming these is recommended.
+  Produce traffic data work items:
+    robotTaskName: Produce traffic data work items
+  Consume traffic data work items:
+    robotTaskName: Consume traffic data work items
+
   Run all tasks:
     shell: python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot
 
